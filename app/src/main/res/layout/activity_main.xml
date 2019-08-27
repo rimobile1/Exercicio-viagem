@@ -10,72 +10,73 @@
         android:id="@+id/lblTempoGasto"
         android:layout_width="101dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
         android:text="@string/TempoGasto"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="31dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lblVelMedia"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="252dp"
-        android:layout_marginRight="252dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/VelocidadeMedia"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblTempoGasto" />
 
     <TextView
         android:id="@+id/lblRendVeiculo"
         android:layout_width="127dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/RendimentoVeiculo"
-        app:layout_constraintTop_toBottomOf="@+id/lblVelMedia"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblVelMedia" />
 
     <EditText
         android:id="@+id/txtTempoGasto"
-        android:layout_width="0dp"
-        android:layout_height="22dp"
+        android:layout_width="269dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblTempoGasto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblTempoGasto" />
 
     <EditText
         android:id="@+id/txtVelMedia"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_width="251dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblVelMedia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblVelMedia" />
 
     <EditText
         android:id="@+id/txtRendVeiculo"
-        android:layout_width="0dp"
-        android:layout_height="24dp"
+        android:layout_width="252dp"
+        android:layout_height="61dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblRendVeiculo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblRendVeiculo" />
@@ -112,37 +113,37 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/Consumo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblDistancia" />
 
     <EditText
         android:id="@+id/lblDistancia2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="315dp"
+        android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="____________________________________"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblDistancia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblDistancia" />
 
     <EditText
         android:id="@+id/lblConsumo2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="323dp"
+        android:layout_height="66dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="_____________________________________"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblConsumo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblConsumo" />

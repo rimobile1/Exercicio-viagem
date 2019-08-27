@@ -8,11 +8,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-        EditText txtTempoGasto;
-        EditText txtVelMedia;
-        EditText txtRendVeiculo;
-        TextView lblDistancia2;
-        TextView lblConsumo2;
+    EditText txtTempoGasto;
+    EditText txtVelMedia;
+    EditText txtRendVeiculo;
+
+    TextView lblDistancia2;
+    TextView lblConsumo2;
 
 
     @Override
@@ -20,22 +21,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-            txtTempoGasto = findViewById(R.id.txtTempoGasto);
-            txtVelMedia = findViewById(R.id.txtVelMedia);
-            txtRendVeiculo = findViewById(R.id.txtRendVeiculo);
-            lblDistancia2 = findViewById(R.id.lblDistancia2);
-            lblConsumo2 = findViewById(R.id.lblConsumo2);
+        txtTempoGasto = findViewById(R.id.txtTempoGasto);
+        txtVelMedia = findViewById(R.id.txtVelMedia);
+        txtRendVeiculo = findViewById(R.id.txtRendVeiculo);
+        lblDistancia2 = findViewById(R.id.lblDistancia2);
+        lblConsumo2 = findViewById(R.id.lblConsumo2);
     }
-        public void  onCalcular(View v){
+
+    public void onCalcular(View v) {
 
         double tg = Double.parseDouble(txtTempoGasto.getText().toString());
         int vm = Integer.parseInt(txtVelMedia.getText().toString());
         double rd = Double.parseDouble(txtRendVeiculo.getText().toString());
         double distancia = tg * vm;
         double consumo = distancia / rd;
-            lblDistancia2.setText(distancia);
-            lblConsumo2.setText(consumo);
+        lblDistancia2.setText(String.valueOf(distancia));
+        lblConsumo2.setText(String.valueOf(consumo));
 
 
-        }
+    }
 }
